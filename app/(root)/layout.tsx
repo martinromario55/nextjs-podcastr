@@ -1,6 +1,7 @@
 import LeftSidebar from "@/components/LeftSidebar";
 import MobileNav from "@/components/MobileNav";
 import RightSidebar from "@/components/RightSidebar";
+import { Toaster } from "@/components/ui/toaster";
 import Image from "next/image";
 
 interface LayoutProps {
@@ -26,8 +27,7 @@ const RootLayout = ({ children }: LayoutProps) => {
               <MobileNav />
             </div>
             <div className="flex flex-col md:pb-14">
-              {/* TODO: Toaster */}
-              <p>Toaster</p>
+              <Toaster />
               {children}
             </div>
           </div>

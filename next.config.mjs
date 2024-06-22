@@ -10,6 +10,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "glorious-snake-334.convex.cloud",
       },
+      {
+        protocol: "https",
+        hostname: "img.freepik.com",
+      },
     ],
   },
 };

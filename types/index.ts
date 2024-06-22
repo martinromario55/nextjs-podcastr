@@ -4,6 +4,22 @@ import { Dispatch, SetStateAction } from "react";
 
 import { Id } from "@/convex/_generated/dataModel";
 
+export interface Podcast {
+  _id: string;
+  podcastTitle: string;
+  description: string;
+  audioUrl: string;
+  author: string;
+  imageUrl: string;
+  podcastId: string;
+  imageStorageId: string;
+  audioStorageId: string;
+  isOwner: boolean;
+  authorImageUrl: string;
+  authorId: string;
+  podcastDescription: string;
+}
+
 export interface EmptyStateProps {
   title: string;
   search?: boolean;

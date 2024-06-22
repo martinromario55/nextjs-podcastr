@@ -1,9 +1,9 @@
 "use client";
 import PodcastCard from "@/components/PodcastCard";
-import { podcastData } from "@/constants";
 import React from "react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { podcastData } from "@/constants/data";
 
 const Home = () => {
   // const tasks = useQuery(api.tasks.get);
@@ -18,13 +18,13 @@ const Home = () => {
         </div> */}
 
         <div className="podcast_grid">
-          {podcastData.map(({ id, title, description, imgURL }) => (
+          {podcastData.map(({ _id, podcastTitle, author, imageUrl }) => (
             <PodcastCard
-              key={id}
-              imgURL={imgURL}
-              title={title}
-              description={description}
-              podcastId={id}
+              key={_id}
+              imageUrl={imageUrl}
+              title={podcastTitle}
+              author={author}
+              podcastId={_id}
             />
           ))}
         </div>
